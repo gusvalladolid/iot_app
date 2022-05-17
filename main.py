@@ -14,7 +14,6 @@ user = {
     "value": 67
 }
 
-
 @app.route('/users', methods=['GET'])
 def get_user():
     return user   
