@@ -19,8 +19,6 @@ while True:
 
     json_data = json.dumps(data)
 
-    _conn.request('POST', '/devices', json_data, headers=h)
-    _conn.close()
     _conn.request('GET', '/devices', json_data, headers=h)
     _conn.close()
 
@@ -28,6 +26,7 @@ while True:
     value = data['value']
     if value >= 15:
         print(value ," -- Es mayor o igual 15")
+        
     else:
         print(value ," -- No es mayor")
 

@@ -5,9 +5,9 @@
 """
 # Inclusion de modulos
 from flask import Flask, request
-
 import http.client
 import json
+
 
 class httpConecction:
 
@@ -35,7 +35,7 @@ device = {
 def get_device():
     if device['value'] > 15:
         num = device['value']
-        return ' Es mayor de 15°'
+        return 'Es mayor de 15°'
     else:
        return 'No es mayor de 15°'
       
